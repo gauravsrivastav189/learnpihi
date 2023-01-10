@@ -8,7 +8,29 @@
 <body>
 	<h1>welcome to learnpihi!</h1>
 
-<table border='1'>
+
+<table border="1">
+  <thead>
+     <th>
+      S.no
+     </th>
+
+    <th>
+       course_name
+    </th>
+
+    <th>
+       rating
+    </th>
+
+    <th>
+      no of comments given
+    </th>
+
+
+  </thead>
+
+
 {% for x in mymembers %}
 <tr>
 <td>{{x.id}}</td>
@@ -19,7 +41,11 @@
 {% endfor %}
 </table>
 
-<a href="add"> click below to know about the courses!</a>
+<br>
+<br>
+<br>
+
+<a href="add/"> click this link to know about the courses!</a>
 
 
 </body>
