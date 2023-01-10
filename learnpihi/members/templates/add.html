@@ -6,16 +6,22 @@
 	<title></title>
 </head>
 <body>
+
 	<h1>course info</h1>
-	<form action="addcomment" method="POST"> 
-		{%csrf_token %}
-		Course Nmae:<br>
-		<input name="coursename">
+	
+	<form action="addcomment/" method="POST"> 
+		{% csrf_token %}
+
+		Course Name:
+		<br>
+		<input name="course">
 		<br>
 		<br>
-		starratings: <br>
 		
-		<select> name="rate"
+		star ratings:
+		
+		<br>
+		<select> name="star"
 		<option value="superb">    5  </option>		
 		<option value="very good"> 4  </option>		
    		<option value="good">      3  </option>		
@@ -24,13 +30,18 @@
 		</select>
 		
 		<br>
-		comments:<br>
-		<textarea name="comment" rows="3" cols="30">
-	</textarea>
 		<br>
 		<br>
-		<input type="submit" value="action button">
+		
+		
+		comments:
+
+		<br>
+		<textarea name="cmt" rows="3" cols="30"></textarea>
+		<br>	
+		
+		<input type="submit" value="Submit">
 	</form>
 
 </body>
-</html>
+</html>	
