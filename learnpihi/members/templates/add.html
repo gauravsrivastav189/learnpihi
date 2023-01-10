@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>course info</h1>
+	<form action="addcomment" method="POST"> 
+		{%csrf_token %}
+		Course Nmae:<br>
+		<input name="coursename">
+		<br>
+		<br>
+		starratings: <br>
+		
+		<select> name="rate"
+		<option value="superb">    5  </option>		
+		<option value="very good"> 4  </option>		
+   		<option value="good">      3  </option>		
+		<option value="bad">       2  </option>		
+		<option value="worst">     1  </option>		
+		</select>
+		
+		<br>
+		comments:<br>
+		<textarea name="comment" rows="3" cols="30">
+	</textarea>
+		<br>
+		<br>
+		<input type="submit" value="action button">
+	</form>
+
+</body>
+</html>
